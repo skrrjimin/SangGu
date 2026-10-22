@@ -20,7 +20,7 @@ export default function SeriesDetailSection({ project, onOpenEpisode }) {
               <img
                 src={displayProject.coverImage}
                 alt={displayProject.title}
-                className="w-full h-full object-cover filter grayscale"
+                className="w-full h-full object-cover"
               />
               {/* Magnifier zoom icon badge at bottom right */}
               <div className="absolute bottom-1.5 right-1.5 bg-black/60 text-white p-1 rounded-sm text-[10px]">
@@ -75,7 +75,7 @@ export default function SeriesDetailSection({ project, onOpenEpisode }) {
           </div>
         </div>
 
-        {/* Bottom Episode List: Divider line & 4 rows with 16:9 thumbnails */}
+        {/* Bottom Episode List: Divider line & rows with 16:9 thumbnails */}
         <div className="border-t border-[#E5E7EB] pt-4">
           <div className="divide-y divide-[#E5E7EB]">
             {displayProject.episodes?.map((ep) => (
@@ -89,7 +89,7 @@ export default function SeriesDetailSection({ project, onOpenEpisode }) {
                   <img
                     src={ep.thumbnail}
                     alt={ep.title}
-                    className="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>

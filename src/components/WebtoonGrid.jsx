@@ -30,22 +30,29 @@ export default function WebtoonGrid({ projects, selectedProject, onSelectProject
                 onClick={() => handleClick(project)}
                 className="group cursor-pointer flex flex-col text-left transition-all duration-200"
               >
-                {/* 3:4 Aspect Ratio Gray Solid Card / Thumbnail with '3x4' text placeholder */}
+                {/* 3:4 Aspect Ratio Card / Thumbnail with Cover Image */}
                 <div 
-                  className={`relative w-full aspect-[3/4] bg-[#9CA3AF] flex items-center justify-center transition-all duration-200 ${
+                  className={`relative w-full aspect-[3/4] bg-[#9CA3AF] overflow-hidden flex items-center justify-center transition-all duration-200 ${
                     isSelected 
                       ? 'ring-4 ring-[#0080FF] shadow-lg' 
                       : 'hover:brightness-95'
                   }`}
                 >
-                  {/* '3x4' centered text matching the reference image */}
-                  <span className="text-xl sm:text-2xl font-bold text-gray-800/80 font-sans select-none">
-                    3x4
-                  </span>
+                  {project.coverImage ? (
+                    <img
+                      src={project.coverImage}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <span className="text-xl sm:text-2xl font-bold text-gray-800/80 font-sans select-none">
+                      3x4
+                    </span>
+                  )}
 
                   {/* Active selection tag */}
                   {isSelected && (
-                    <div className="absolute top-2 right-2 bg-[#0080FF] text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">
+                    <div className="absolute top-2 right-2 bg-[#0080FF] text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm z-10">
                       선택됨
                     </div>
                   )}

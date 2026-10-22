@@ -31,16 +31,21 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #E2E8F0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #64748B;
   border-radius: 9999px;
+  border: 2px solid #E2E8F0;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #0080FF;
 }
+::-webkit-scrollbar-thumb:active {
+  background: #0056B3;
+}
+

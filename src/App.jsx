@@ -8,7 +8,7 @@ import WebtoonViewerModal from './components/WebtoonViewerModal';
 import { WEBTOON_PROJECTS } from './data/portfolioData';
 
 export default function App() {
-  const [selectedProject, setSelectedProject] = useState(WEBTOON_PROJECTS[1]);
+  const [selectedProject, setSelectedProject] = useState(WEBTOON_PROJECTS[0]);
   const [activeEpisode, setActiveEpisode] = useState(null);
   const [activeTab, setActiveTab] = useState('webtoon');
 

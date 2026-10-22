@@ -16,20 +16,52 @@ export const WEBTOON_PROJECTS = [
     id: "project-1",
     title: "놀러와요 휴양의섬!",
     author: "글/그림 상구",
+    metaLine: "글/그림 상구",
     status: "연재중",
     genre: "일상 / 판타지",
     synopsis: "마약범 주머니나 털던 사기꾼, 핸드폰도 경찰도 없는 기묘한 휴양섬에 불시착한다.",
     tags: ["#일상개그", "#판타지", "#막장"],
-    coverImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80",
+    coverImage: "/images/project1/cover.jpg",
     episodes: [
       {
         id: 1,
+        epNumber: 1,
         title: "1화",
         uploadDate: "26.10.15",
-        thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=640&q=80",
+        thumbnail: "/images/project1/ep1/1화_new_001.jpg",
+        cuts: Array.from({ length: 118 }, (_, i) => ({
+          type: "panel",
+          imageUrl: `/images/project1/ep1/1화_new_${String(i + 1).padStart(3, "0")}.jpg`
+        }))
+      },
+      {
+        id: 2,
+        epNumber: 2,
+        title: "2화",
+        uploadDate: "26.10.08",
+        thumbnail: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=640&q=80",
         cuts: [
-          { type: "narration", text: "푸른 바다 너머, 지도에 없는 섬이 나타났다." },
-          { type: "dialogue", speaker: "주인공", text: "“여기가 바로 소문으로만 듣던 그 섬인가?”" }
+          { type: "narration", text: "휴양섬에서의 기묘한 둘째 날이 밝았다." }
+        ]
+      },
+      {
+        id: 3,
+        epNumber: 3,
+        title: "3화",
+        uploadDate: "26.10.01",
+        thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=640&q=80",
+        cuts: [
+          { type: "narration", text: "섬 주민들의 수상한 비밀이 하나씩 드러난다." }
+        ]
+      },
+      {
+        id: 4,
+        epNumber: 4,
+        title: "4화",
+        uploadDate: "26.09.24",
+        thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=640&q=80",
+        cuts: [
+          { type: "narration", text: "과연 이 섬에서 무사히 빠져나갈 수 있을까?" }
         ]
       }
     ]
@@ -38,7 +70,7 @@ export const WEBTOON_PROJECTS = [
     id: "project-2",
     title: "무인입시",
     author: "글/그림 상구",
-    metaLine: " 글/그림 상구",
+    metaLine: "글/그림 상구",
     status: "연재중",
     genre: "현대사극",
     synopsis: "무인들이 입시를 치르는 시대, 상구의 파란만장한 입시 도전기.",
@@ -47,42 +79,12 @@ export const WEBTOON_PROJECTS = [
     episodes: [
       {
         id: 1,
+        epNumber: 1,
         title: "1화",
         uploadDate: "26.10.13",
         thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=640&q=80",
         cuts: [
-          { type: "narration", text: "매화검존 청명의 칼끝에서 붉은 매화 꽃잎이 피어올랐다." },
-          { type: "dialogue", speaker: "청명", text: "“화산의 검은 꺾이지 않는다. 똑똑히 보아라!”" }
-        ]
-      },
-      {
-        id: 2,
-        title: "2화",
-        uploadDate: "26.10.06",
-        thumbnail: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "깊은 산속, 매화검의 기운이 온 산을 뒤흔들기 시작했다." },
-          { type: "dialogue", speaker: "장문인", text: "“이것이... 진정한 화산의 검이란 말인가?”" }
-        ]
-      },
-      {
-        id: 3,
-        title: "3화",
-        uploadDate: "26.09.29",
-        thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "화산의 제자들이 일제히 청명의 뒤를 따라 검을 뽑았다." },
-          { type: "dialogue", speaker: "청명", text: "“자, 가자. 화산의 이름을 천하에 알릴 때다.”" }
-        ]
-      },
-      {
-        id: 4,
-        title: "4화",
-        uploadDate: "26.09.22",
-        thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "백 년 전의 영광을 되찾기 위한 첫걸음이 시작되었다." },
-          { type: "dialogue", speaker: "청명", text: "“내가 살아있는 한, 화산은 절대로 지지 않는다.”" }
+          { type: "narration", text: "무인들이 입시를 치르는 시대, 첫 번째 시험이 시작된다." }
         ]
       }
     ]
