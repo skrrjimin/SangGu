@@ -39,30 +39,33 @@ export const WEBTOON_PROJECTS = [
         epNumber: 2,
         title: "2화",
         uploadDate: "26.10.08",
-        thumbnail: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "휴양섬에서의 기묘한 둘째 날이 밝았다." }
-        ]
+        thumbnail: "/images/project1/ep2/2화_new_001.jpg",
+        cuts: Array.from({ length: 121 }, (_, i) => ({
+          type: "panel",
+          imageUrl: `/images/project1/ep2/2화_new_${String(i + 1).padStart(3, "0")}.jpg`
+        }))
       },
       {
         id: 3,
         epNumber: 3,
         title: "3화",
         uploadDate: "26.10.01",
-        thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "섬 주민들의 수상한 비밀이 하나씩 드러난다." }
-        ]
+        thumbnail: "/images/project1/ep3/3화_001.jpg",
+        cuts: Array.from({ length: 94 }, (_, i) => ({
+          type: "panel",
+          imageUrl: `/images/project1/ep3/3화_${String(i + 1).padStart(3, "0")}.jpg`
+        }))
       },
       {
         id: 4,
         epNumber: 4,
         title: "4화",
         uploadDate: "26.09.24",
-        thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "과연 이 섬에서 무사히 빠져나갈 수 있을까?" }
-        ]
+        thumbnail: "/images/project1/ep4/4화_001.jpg",
+        cuts: Array.from({ length: 111 }, (_, i) => ({
+          type: "panel",
+          imageUrl: `/images/project1/ep4/4화_${String(i + 1).padStart(3, "0")}.jpg`
+        }))
       }
     ]
   },
@@ -75,7 +78,7 @@ export const WEBTOON_PROJECTS = [
     genre: "현대사극",
     synopsis: "무인들이 입시를 치르는 시대, 상구의 파란만장한 입시 도전기.",
     tags: ["#현대판타지", "#개그", "#액션"],
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    coverImage: "/images/project2/cover.jpg",
     episodes: [
       {
         id: 1,
