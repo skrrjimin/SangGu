@@ -28,10 +28,10 @@ export const WEBTOON_PROJECTS = [
         epNumber: 1,
         title: "1화",
         uploadDate: "26.10.15",
-        thumbnail: "/images/project1/ep1/1화_new_001.jpg",
+        thumbnail: "/images/project1/ep1/001.jpg",
         cuts: Array.from({ length: 118 }, (_, i) => ({
           type: "panel",
-          imageUrl: `/images/project1/ep1/1화_new_${String(i + 1).padStart(3, "0")}.jpg`
+          imageUrl: `/images/project1/ep1/${String(i + 1).padStart(3, "0")}.jpg`
         }))
       },
       {
@@ -39,10 +39,10 @@ export const WEBTOON_PROJECTS = [
         epNumber: 2,
         title: "2화",
         uploadDate: "26.10.08",
-        thumbnail: "/images/project1/ep2/2화_new_001.jpg",
+        thumbnail: "/images/project1/ep2/001.jpg",
         cuts: Array.from({ length: 121 }, (_, i) => ({
           type: "panel",
-          imageUrl: `/images/project1/ep2/2화_new_${String(i + 1).padStart(3, "0")}.jpg`
+          imageUrl: `/images/project1/ep2/${String(i + 1).padStart(3, "0")}.jpg`
         }))
       },
       {
@@ -50,10 +50,10 @@ export const WEBTOON_PROJECTS = [
         epNumber: 3,
         title: "3화",
         uploadDate: "26.10.01",
-        thumbnail: "/images/project1/ep3/3화_001.jpg",
+        thumbnail: "/images/project1/ep3/001.jpg",
         cuts: Array.from({ length: 94 }, (_, i) => ({
           type: "panel",
-          imageUrl: `/images/project1/ep3/3화_${String(i + 1).padStart(3, "0")}.jpg`
+          imageUrl: `/images/project1/ep3/${String(i + 1).padStart(3, "0")}.jpg`
         }))
       },
       {
@@ -61,10 +61,10 @@ export const WEBTOON_PROJECTS = [
         epNumber: 4,
         title: "4화",
         uploadDate: "26.09.24",
-        thumbnail: "/images/project1/ep4/4화_001.jpg",
+        thumbnail: "/images/project1/ep4/001.jpg",
         cuts: Array.from({ length: 111 }, (_, i) => ({
           type: "panel",
-          imageUrl: `/images/project1/ep4/4화_${String(i + 1).padStart(3, "0")}.jpg`
+          imageUrl: `/images/project1/ep4/${String(i + 1).padStart(3, "0")}.jpg`
         }))
       }
     ]
