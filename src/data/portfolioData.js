@@ -76,7 +76,7 @@ export const WEBTOON_PROJECTS = [
     metaLine: "글/그림 상구",
     status: "연재중",
     genre: "현대사극",
-    synopsis: "무인들이 입시를 치르는 시대, 상구의 파란만장한 입시 도전기.",
+    synopsis: "무인이 천대받는 현대, 문인 사회에서 무인으로 입시에 도전하는 고등학생 손창진의 이야기!",
     tags: ["#현대판타지", "#개그", "#액션"],
     coverImage: "/images/project2/cover.jpg",
     episodes: [
@@ -88,30 +88,6 @@ export const WEBTOON_PROJECTS = [
         thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=640&q=80",
         cuts: [
           { type: "narration", text: "무인들이 입시를 치르는 시대, 첫 번째 시험이 시작된다." }
-        ]
-      }
-    ]
-  },
-  {
-    id: "project-3",
-    title: "제목",
-    author: "글/그림",
-    displayRatio: "3x4",
-    status: "기획중",
-    genre: "스토리",
-    rating: "9.91",
-    synopsis: "새로운 스토리 기획 준비작.",
-    tags: ["#기획작", "#신작", "#준비중"],
-    coverImage: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
-    episodes: [
-      {
-        id: 1,
-        title: "프롤로그",
-        rating: "9.91",
-        uploadDate: "26.08.01",
-        thumbnail: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=640&q=80",
-        cuts: [
-          { type: "narration", text: "새로운 세계의 문이 열린다." }
         ]
       }
     ]
