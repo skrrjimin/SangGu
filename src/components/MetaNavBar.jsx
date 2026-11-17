@@ -24,19 +24,6 @@ export default function MetaNavBar({ activeTab, onTabSelect }) {
             WORKS
           </button>
 
-          <button
-            onClick={() => onTabSelect && onTabSelect('collection')}
-            className={`uppercase tracking-widest transition-colors ${
-              activeTab === 'collection' ? 'text-black font-black' : 'text-gray-800 hover:text-[#0080FF]'
-            }`}
-          >
-            COLLECTION
-          </button>
-
-          <span className="uppercase tracking-widest text-gray-700 font-semibold flex-shrink-0">
-            2021-2025
-          </span>
-
           {/* Instagram Handle Pill / Badge at the right */}
           <a
             href="https://www.instagram.com/oriori_kk/"
